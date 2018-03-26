@@ -18,10 +18,11 @@
     <span class="cevapNumarasi">Cevap 1:</span>
     <div id="cevap-1" class="cevapYazdirmaAlani"></div>
     <script type="text/javascript">
-        /**
-         * Sorunun cevabını bu yorumdan sonra yazınız.
-         *
-         */
+        
+var a=5 , b=8 , c=3 , islem;
+islem=C x (( A + B) x B) / 2 - C;
+write("cevap1:"+ &islem);
+        
 
     </script>
     <div class="clearfix"></div>
@@ -37,17 +38,25 @@
     <span class="cevapNumarasi">Cevap 2 :</span>
     <div id="cevap-2" class="cevapYazdirmaAlani">    </div>
     <script type="text/javascript">
-        /**
-         * Sayının girileceği input nesnesini <div id="cevap-2"...></div> etiketinin üstüne yazabilirsiniz.
-         *
-         * Eğer sayı tek ise ekrana "(girilen sayı) tek bir sayıdır." yazdırılacak. Örn. 3 tek sayıdır.
-         * Eğer sayı çift ise ekrana "(girilen sayı) çift bir sayıdır." yazdırılacak. Örn. 4 çift sayıdır.
-         *
-         * Sonuç <div id="cevap-2"...></div> etiketi içerisine yazılmalıdır.
-         *
-         * Sorunun cevabını bu yorumdan sonra yazınız.
-         *
-         */
+	var txtsayi=document.getElementById("sayi");
+	var btnHesapla=document.getElementById("hesapla");
+	
+	btnHesapla.onclick=function(){
+		var sayi=Number(txtsayi.value);
+		var tek=0,cift=0,toplam=0;
+		for(var i=1;i<=sayi;i++)
+			{
+				if(i%2==0)
+					{
+						cift+=i;
+					}
+				else
+					{
+						tek+=i;
+					}
+			}
+		write("Tek sayıların toplamı : "+tek+"<BR>"+"Çift sayıların toplamı : "+cift);
+	}
 
     </script>
     <div class="clearfix"></div>
